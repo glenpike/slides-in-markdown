@@ -1,3 +1,10 @@
+/* Colours:
+Blue BG: 00314C;
+Red Complementary: FF1927;
+Bright Blue: 00A4FF;
+Mustard 1: CCC714;
+Mustard 2: B2AE09;
+*/
 /* Reset
 -------------------------------------------------- */
 *, *:before, *:after {
@@ -65,7 +72,7 @@ body {
 }
 
 .remark-slide-content { /* actual slides style */
-    background-color: #2196F3;
+    background-color: #00314c;
     background-repeat: no-repeat;
     background-position: center center !important;
     background-size: 100% auto !important; /* override remark.js's Javascript-based image auto-scaling */
@@ -123,7 +130,7 @@ body {
   content: counter(step-counter);
   margin-right: 5px;
   font-size: 0.716em;
-  background-color: #FF9800;
+  background-color: #FF1927;
   font-weight: bold;
   padding: 3px 8px;
   border-radius: 3px;
@@ -243,12 +250,13 @@ body {
 -------------------------------------------------- */
 .left-column,
 .right-column {
-    width: 49%;
+    width: 45%;
     text-align: left;
 }
 
 .left-column {
     float: left;
+    margin-right: 10%;
 }
 
 .right-column {
@@ -304,4 +312,9 @@ body {
 
 .blackbg {
     box-shadow: 0px 9999px rgba(13, 13, 13, 0.4) inset;
+}
+
+.sinon {
+    font: 4em/1.5 Ubuntu,Georgia;
+    font-weight: 400;
 }
