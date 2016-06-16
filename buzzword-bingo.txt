@@ -34,8 +34,6 @@ PhantomJS
 
 JSHint
 
-Uglify
-
 RequireJS
 
 SASS?
