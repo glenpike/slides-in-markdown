@@ -15,14 +15,14 @@ background-color: #00314c
 
 class: center, middle
 
-# JavaScript Buzzword Bingo
+# Bespin Buzzword Bingo
 
-## A quick introduction to the JavaScript infrastructure we use in Bespin
+## Flyby of Focus' JavaScript Menagerie
 
 ???
-Requires some audience participation
-Focus Team Members not allowed.
-Prize for most correct answers
+Requires some audience participation.
+Focus Team Members can only answer if no-one else can.
+Prize for most correct answers.
 
 ---
 name: Tools
@@ -55,6 +55,11 @@ name: Node
 4. https://nodejs.org/
 ]
 
+???
+Currently using a fairly old version - 0.10.something rather than 4 or 6
+Not a huge risk, but we should probably upgrade at some point.
+Can use a version manager
+
 ---
 class: center, middle
 
@@ -73,12 +78,17 @@ name: NPM
 .right-column[
 # NPM
 
-1. 3rd party library manager
-2. package.json file
+1. Manage 3rd party libs
+2. package.json configures for your project
 3. Registry online/private
 4. Can use versioning and mix deps
 5. https://npmjs.com
 ]
+
+???
+Comes with nodejs
+Global vs local permissions is bit of a fiddle
+Can be fixed with workarounds, etc.
 
 ---
 class: center, middle
@@ -105,6 +115,12 @@ name: Grunt
 5. http://gruntjs.com/
 ]
 
+???
+grunt-contrib-* official plugins.
+We've modularized our configuration into files - 
+allows us to dynamically generate some configurations.
+Would consider skipping Grunt now - just use npm scripting.
+
 ---
 
 class: center, middle
@@ -129,6 +145,11 @@ name: Bower
 4. https://bower.io/
 ]
 
+???
+Can use it for HTML & CSS too - inuit-css
+Duplicates of npm & bower packages
+We have to look for libs that support our module type - AMD
+
 ---
 class: center, middle
 
@@ -136,269 +157,6 @@ name: Libraries
 
 # Client-side Libraries
 
----
-class: center, middle
-
-name: jQueryLogo
-
-<img src="media/jquery-logo.png" alt="Logo" style="width: 50% !important;background-color:#fff;padding:40px"/>
-
----
-class: center, middle
-
-name: jQuery
-
-.left-column[
-<img src="media/jquery-logo-text.png" alt="Logo" style="background-color:#fff;padding:10px"/>
-]
-
-.right-column[
-
-#jQuery 
-
-1. Everyone's staple
-2. Ajax requests
-3. DOM manipulation
-4. http://jquery.com/
-]
-
----
-class: center, middle
-
-name: UnderscoreLogo
-
-# .white[_.]
-
----
-class: center, middle
-
-name: Underscore
-
-.left-column[
-<img src="media/underscore-logo.png" alt="Logo" style="background-color:#fff;padding:10px;"/>]
-
-.right-column[
-
-# .smaller[Underscore]
-
-1. Programming helpers
-2. Collections, Arrays, Objects, etc.
-3. Functional programming
-4. http://underscorejs.org
-]
-
----
-class: center, middle
-
-name: BackboneLogo
-
-<img src="media/backbone-logo.png" alt="Logo" style="width: 50% !important;background-color:#fff;padding:40px"/>
-
----
-class: center, middle
-
-name: BackboneJS
-
-.left-column[
-<img src="media/backbone-logo.svg" alt="Logo" style="background-color:#fff;padding:10px"/>
-]
-
-.right-column[
-# .smaller[BackboneJS]
-1. MV* Framework
-2. Unopinionated / flexible
-3. Models/Collections/Views/Events/Router
-4. http://backbonejs.org/
-]
-
----
-class: center, middle
-
-name: MarionetteLogo
-
-<img src="media/marionette-logo.svg" alt="Logo" style="width: 50% !important;"/>
-
----
-class: center, middle
-
-name: MarionetteJS
-
-.left-column[
-<img src="media/marionette-logo.svg" alt="Logo" style="width: 50% !important;"/>]
-
-.right-column[
-# .smaller[MarionetteJS]
-
-1. BackboneJS' Missing Views
-2. Application architecture helpers.
-3. Reduce memory leaks.
-4. http://marionettejs.com/
-]
-
----
-class: center, middle
-
-name: HandlebarsLogo
-
-<img src="media/handlebars-mustache-logo.png" alt="Logo" style="width: 50% !important;"/>
-
----
-class: center, middle
-
-name: Handlebars
-
-.left-column[
-![Logo](media/handlebars-logo.png)]
-
-.right-column[
-
-#.smaller[Handlebars]
-
-1. JavaScript Templating
-2. HTML Escaping
-3. More logic than Mustache
-4. Extend with helpers
-5. http://handlebarsjs.com/
-]
----
-class: center, middle
-
-name: MochaJSLogo
-
-<img src="media/mocha-logo.svg" alt="Logo" style="width: 50% !important;"/>
-
----
-class: center, middle
-
-name: MochaJS
-
-.left-column[
-![Logo](media/mocha-logo.svg)]
-
-.right-column[
-# MochaJS
-
-1. Test framework
-2. Browser or Node based
-3. Nested test suites
-4. Sync or Async tests
-5. https://mochajs.org/
-]
----
-class: center, middle
-
-name: ChaiJSLogo
-
-<img src="media/chai-logo.png" alt="Logo" style="width: 50% !important;"/>
-
----
-class: center, middle
-
-name: ChaiJS
-
-.left-column[
-![Logo](media/chai-logo.png)]
-
-.right-column[
-# ChaiJS
-
-1. Assertion library
-2. TDD / BDD styles
-3. Pairs with Mocha, etc.
-4. Plugins for jQuery, etc.
-5. http://chaijs.com/
-]
----
-class: center, middle
-
-name: SinonJSLogo
-
-<h1 class="sinon white">Sinon</h1>
-
-
----
-class: center, middle
-
-name: SinonJS
-
-.left-column[
-<h1 class="sinon white">Sinon</h1>]
-
-.right-column[
-#.smaller[Test Utils]
-1. Spy on / Stub functions
-2. Mocking
-3. Fake Server for Ajax
-4. http://sinonjs.org/
-]
----
-class: center, middle
-
-name: KarmaLogo
-
-<img src="media/karma-logo-only.svg" alt="Logo" style="width: 50% !important;"/>
-
----
-class: center, middle
-
-name: 
-
-.left-column[
-![Logo](media/karma-logo.svg)]
-
-.right-column[
-#Karma
-
-1. Test runner 
-2. Provides coverage reporting
-3. Multiple browsers
-4. http://karma-runner.github.io
-]
----
-class: center, middle
-
-name: PhantomJSLogo
-
-<img src="media/phantomjs-logo.png" alt="Logo" style="width: 50% !important;"/>
-
----
-class: center, middle
-
-name: PhantomJS
-
-.left-column[
-![Logo](media/phantomjs-logo.png)]
-
-.right-column[
-# .smaller[PhantomJS]
-
-1. Headless browser
-2. Webkit support
-3. Scriptable
-4. http://phantomjs.org
-]
----
-class: center, middle
-
-name: JSHintLogo
-
-![Logo](media/jshint-dark.png)
-
----
-class: center, middle
-
-name: JSHint
-
-.left-column[
-![Logo](media/jshint-dark.png)]
-
-.right-column[
-#.smaller[Code linter]
-1. Enforce standards
-2. Less fussy than JSLint
-3. Works in editors too.
-4. http://jshint.com
-]
 ---
 class: center, middle
 
@@ -425,6 +183,347 @@ name: RequireJS
 5. Multiple per-page
 6. http://requirejs.org
 ]
+
+???
+Putting this at the top because it's how we modularized our code.
+AMD has probably been superceeded by other systems - CommonJS
+But... these need a transpiler
+Although ES6 provides a module definition - not supported fully.
+---
+class: center, middle
+
+name: jQueryLogo
+
+<img src="media/jquery-logo.png" alt="Logo" style="width: 50% !important;background-color:#fff;padding:40px"/>
+
+---
+class: center, middle
+
+name: jQuery
+
+.left-column[
+<img src="media/jquery-logo-text.png" alt="Logo" style="background-color:#fff;padding:10px"/>
+]
+
+.right-column[
+
+#jQuery 
+
+1. Everyone's staple
+2. Ajax requests
+3. DOM manipulation
+4. http://jquery.com/
+]
+
+???
+We don't have to use - could swap out for Zepto, etc.
+Would need to provide ajax & DOM manipulation funcs though.
+Some of our other libs are jQuery plugins.
+
+---
+class: center, middle
+
+name: UnderscoreLogo
+
+# .white[_.]
+
+---
+class: center, middle
+
+name: Underscore
+
+.left-column[
+<img src="media/underscore-logo.png" alt="Logo" style="background-color:#fff;padding:10px;"/>]
+
+.right-column[
+
+# .smaller[Underscore]
+
+1. Programming helpers
+2. Simple templating
+3. Collections, Arrays, Objects, etc.
+4. Functional programming
+5. http://underscorejs.org
+]
+
+???
+Alternate is lodash.
+Has some weirdness for true functional devotees: https://www.youtube.com/watch?v=m3svKOdZijA
+Gets messy when you change default template tags around...
+
+---
+class: center, middle
+
+name: BackboneLogo
+
+<img src="media/backbone-logo.png" alt="Logo" style="width: 50% !important;background-color:#fff;padding:40px"/>
+
+---
+class: center, middle
+
+name: BackboneJS
+
+.left-column[
+<img src="media/backbone-logo.svg" alt="Logo" style="background-color:#fff;padding:10px"/>
+]
+
+.right-column[
+# .smaller[BackboneJS]
+1. MV* Framework
+2. Unopinionated / flexible
+3. Models/Collections/Views/Events/Router
+4. http://backbonejs.org/
+]
+
+???
+Chosen for it's maturity and flexibility
+Views are a bit woolly and vague - needs some help.
+
+---
+class: center, middle
+
+name: MarionetteLogo
+
+<img src="media/marionette-logo.svg" alt="Logo" style="width: 50% !important;"/>
+
+---
+class: center, middle
+
+name: MarionetteJS
+
+.left-column[
+<img src="media/marionette-logo.svg" alt="Logo" style="width: 50% !important;"/>]
+
+.right-column[
+# .smaller[MarionetteJS]
+
+1. BackboneJS' Missing Views
+2. Application architecture helpers.
+3. Reduce memory leaks.
+4. http://marionettejs.com/
+]
+
+???
+Some weirdness around applications and modules:
+AMD + modules is "double-wrapping"
+Behaviours are nice paradigm - akin to mixins.
+v3 coming, which removes Modules and combines
+Behaviours/Mixins
+
+---
+class: center, middle
+
+name: HandlebarsLogo
+
+<img src="media/handlebars-mustache-logo.png" alt="Logo" style="width: 50% !important;"/>
+
+---
+class: center, middle
+
+name: Handlebars
+
+.left-column[
+![Logo](media/handlebars-logo.png)]
+
+.right-column[
+
+#.smaller[Handlebars]
+
+1. JavaScript Templating
+2. HTML Escaping
+3. More logic than Mustache
+4. Extend with helpers
+5. http://handlebarsjs.com/
+]
+
+???
+Easy to grasp syntax if you've used mustache
+We've mixed underscore & handlebars templates, but trying to just use latter.
+
+---
+class: center, middle
+
+# Testing
+
+---
+
+class: center, middle
+
+name: KarmaLogo
+
+<img src="media/karma-logo-only.svg" alt="Logo" style="width: 50% !important;"/>
+
+---
+
+class: center, middle
+
+name: 
+
+.left-column[
+![Logo](media/karma-logo.svg)]
+
+.right-column[
+#Karma
+
+1. Test runner 
+2. Provides coverage reporting
+3. Multiple browsers
+4. http://karma-runner.github.io
+]
+
+???
+Made by Google for AngularJS
+Slight fiddle with AMD
+Dynamically generate config
+Built in reporting works nicely
+Pluggable
+
+---
+
+class: center, middle
+
+name: MochaJSLogo
+
+<img src="media/mocha-logo.svg" alt="Logo" style="width: 50% !important;"/>
+
+---
+class: center, middle
+
+name: MochaJS
+
+.left-column[
+![Logo](media/mocha-logo.svg)]
+
+.right-column[
+# MochaJS
+
+1. Test framework
+2. Browser or Node based
+3. Nested test suites
+4. Sync or Async tests
+5. https://mochajs.org/
+]
+
+???
+Not using all of it's tools - Karma overlaps
+Browser + command line is invaluablefor debugging tests.
+
+---
+class: center, middle
+
+name: ChaiJSLogo
+
+<img src="media/chai-logo.png" alt="Logo" style="width: 50% !important;"/>
+
+---
+class: center, middle
+
+name: ChaiJS
+
+.left-column[
+![Logo](media/chai-logo.png)]
+
+.right-column[
+# ChaiJS
+
+1. Assertion library
+2. TDD / BDD styles
+3. Pairs with Mocha, etc.
+4. Plugins for jQuery, etc.
+5. http://chaijs.com/
+]
+
+???
+Mocha's default assertion lib is for NodeJS
+So we can run in browser...
+
+---
+class: center, middle
+
+name: SinonJSLogo
+
+<h1 class="sinon white">Sinon</h1>
+
+
+---
+class: center, middle
+
+name: SinonJS
+
+.left-column[
+<h1 class="sinon white">Sinon</h1>]
+
+.right-column[
+#.smaller[Test Utils]
+1. Spy on / Stub functions
+2. Mocking
+3. Fake Server for Ajax
+4. http://sinonjs.org/
+]
+
+???
+Not used mocking much in tests
+Server can be fiddly to configure - have to remember to destroy!
+
+
+---
+class: center, middle
+
+name: PhantomJSLogo
+
+<img src="media/phantomjs-logo.png" alt="Logo" style="width: 50% !important;"/>
+
+---
+class: center, middle
+
+name: PhantomJS
+
+.left-column[
+![Logo](media/phantomjs-logo.png)]
+
+.right-column[
+# .smaller[PhantomJS]
+
+1. Headless browser
+2. Webkit support
+3. Scriptable
+4. http://phantomjs.org
+]
+
+???
+Our version is 1.9.8 - need to upgrade because it's missing some important
+implementations that catch us out occasionally
+
+---
+class: center, middle
+
+name: JSHintLogo
+
+![Logo](media/jshint-dark.png)
+
+---
+class: center, middle
+
+name: JSHint
+
+.left-column[
+![Logo](media/jshint-dark.png)]
+
+.right-column[
+#.smaller[Code linter]
+1. Enforce standards
+2. Less fussy than JSLint
+3. Works in editors too.
+4. http://jshint.com
+]
+
+???
+Nice, but looking around, there's some more tools out there which may help us
+by auto-fixing some errors, etc. - ESLint JSCS
+---
+class: center, middle
+
+# Others
 ---
 class: center, middle
 
@@ -448,6 +547,12 @@ name: SASS
 3. Large ecosystem
 4. http://sass-lang.com/
 ]
+
+???
+An odd one out as it's CSS, but we use tooling around this using JavaScript
+to compile, etc.
+Looking at more tools for linting and post-processing to make lives easier.
+
 ---
 class: center, middle
 
@@ -474,6 +579,15 @@ name: Express
 3. Pluggable middleware
 4. http://expressjs.com
 ]
+
+???
+Dev server runs this - simply serves "static" folders, but lots of them.
+
+---
+class: center, middle
+
+# Curveball
+
 ---
 class: center, middle
 
@@ -496,6 +610,12 @@ name: Chrome
 3. Developer Tools
 4. https://www.google.com/chrome/
 ]
+
+???
+Possibly the tool that we all take for granted but use the most.
+Personally find the developer tools the most invaluable thing:
+Command line, debugging, almost ide like.
+
 ---
 
 
